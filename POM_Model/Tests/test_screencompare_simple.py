@@ -22,5 +22,6 @@ for url in test_urls:
                                         location, url)
     i += 1
 Utility.image_compare(screen[0], screen[1], location)
+Utility.analyze(screen[0], screen[1], location)
 
 driver.close()

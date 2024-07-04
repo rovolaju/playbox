@@ -27,8 +27,8 @@ def image_compare(source1, source2, location):
 
 
 def analyze(source1, source2, location):
-    screenshot_staging = source1
-    screenshot_production = source2
+    screenshot_staging = Image.open(source1)
+    screenshot_production = Image.open(source2)
     columns = 60
     rows = 80
     screen_width, screen_height = screenshot_staging.size
